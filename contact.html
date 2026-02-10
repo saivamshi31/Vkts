@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Vibe Kreatives</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px rgba(10, 25, 47, 0.1);
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        @media (min-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">Vibe<span>Kreatives</span></a>
+            <div class="mobile-menu-btn" id="mobile-menu-btn">☰</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#services">Services</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html" style="color: var(--primary-color); font-weight: bold;">Contact</a></li>
+                <li><a href="contact.html" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.9rem;">Get
+                        Started</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section" style="background: #f0f4f8; padding: 60px 0;">
+        <div class="container text-center">
+            <h1>Contact Me</h1>
+            <p style="max-width: 600px; margin: 0 auto; color: var(--text-light);">I'd love to hear from you. Let's
+                start a conversation.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div>
+                    <h2 class="mb-2">Get In Touch</h2>
+                    <p class="mb-2" style="color: var(--text-light);">
+                        Have a project in mind or want to learn more about my services? Fill out the form or reach out
+                        to me directly.
+                    </p>
+
+                    <div style="margin-bottom: 30px;">
+                        <h4 style="margin-bottom: 10px;">Email Me</h4>
+                        <p><a href="mailto:info@vibekreatives.com"
+                                style="color: var(--primary-color); font-weight: 500;">info@vibekreatives.com</a></p>
+                    </div>
+
+                    <div style="margin-bottom: 30px;">
+                        <h4 style="margin-bottom: 10px;">Location</h4>
+                        <p style="color: var(--text-light);">India</p>
+                    </div>
+
+                    <div style="margin-bottom: 30px;">
+                        <h4 style="margin-bottom: 10px;">Working Hours</h4>
+                        <p style="color: var(--text-light);">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div
+                        style="background: #eee; height: 200px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #777;">
+                        [Google Map Placeholder]
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div
+                    style="background: var(--white); padding: 30px; border-radius: 10px; box-shadow: var(--shadow-sm); border: 1px solid #eee;">
+                    <form action="#" method="POST"
+                        onsubmit="event.preventDefault(); alert('Thank you for your message! I will get back to you shortly.');">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="john@company.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="+91 98765 43210">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" class="form-control" placeholder="How can I help you?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                    <p style="margin-top: 15px; font-size: 0.85rem; color: #888; text-align: center;">
+                        I respect your privacy. No spam.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4><a href="../index.html" style="color: inherit;">Vibe Kreatives</a></h4>
+                    <p style="color: #a8b2d1; font-size: 0.9rem;">Empowering businesses through smart technology
+                        solutions.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="editing-designing.html">Editing & Designing</a></li>
+                        <li><a href="website-designing.html">Website Designing</a></li>
+                        <li><a href="whatsapp-automation.html">WhatsApp Automation</a></li>
+                        <li><a href="digital-marketing.html">Digital Marketing</a></li>
+                        <li><a href="digital-products.html">Digital Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li style="color: #a8b2d1;">India</li>
+                        <li><a href="mailto:info@vibekreatives.com">info@vibekreatives.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Vibe Kreatives. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

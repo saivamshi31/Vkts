@@ -1,0 +1,16 @@
+:root {
+    --primary-color: #0a192f; /* Deep Blue */
+    --secondary-color: #f8f9fa; /* Light Grey/White */
+    --accent-color: #64ffda; /* Teal/Light Green */
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+    --white: #ffffff;
+    
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    
+    --transition: all 0.3s ease;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
+}
